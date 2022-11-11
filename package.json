@@ -20,7 +20,7 @@
     "prerelease": "npm run u && npm --no-git-tag-version version minor",
     "release": "push_option=release npm run push",
     "cm": "git add . && git commit -am \"${msg:-x}\"",
-    "push": "yarn cm && git push--push-option=${push_option:-nothing}",
+    "push": "yarn cm && git push",
     "pull": "git pull gitee master",
     "f": "find . -type d \\( -name .git -o -name node_modules -o -name dist \\) -prune -o -type f -name \"*.${ext:-*}\" -print0| xargs -0 grep -n ",
     "u": "ncu -u && npm install",
